@@ -5,14 +5,14 @@ Olá, seja Bem-vindo! Aqui estaremos criando Pipelines :bar_chart: no Jenkins de
 Primeiro de tudo, iremos criar um arquivo para executarmos um Jenkins dentro de um container do Docker :whale:.
 
 Execute o comando abaixo:
-~~~
+```{sh}
 $ vim start_jenkins_master.sh
-~~~
+```
 :warning: No meu caso foi utilizado o vim mas podemos utilizar nano, atom, ou qualquer outro editor da sua preferência, sem problemas. :thumbsup:
 
 Agora digite tudo isso :sweat_smile::
 
-~~~
+```{sh}
 #!/bin/bash
 
 ## Change to the dir where the script is located and
@@ -31,7 +31,7 @@ docker run -d \
         -p 8080:8080 \
         -p 50000:50000 \
         jenkins:2.3
-~~~
+```
 
 Salve o arquivo e saia.
 
